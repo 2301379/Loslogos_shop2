@@ -23,7 +23,7 @@ session_start();
     }
 
     try {
-        $pdo = new PDO('mysql:host=mysql311.phy.lolipop.lan;dbname=LAA1553900-chaoz;charset=utf8', 'LAA1553900', 'Pass1105');
+        $pdo = new PDO('mysql:host=mysql313.phy.lolipop.lan;dbname=LAA1557214-loslogosshop;charset=utf8', 'LAA1557214', 'Pass0331');
 
         $customer_id = $_SESSION['customer']['id'] ?? null;
         $guest_id = $_SESSION['guest_id'] ?? null;

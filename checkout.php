@@ -11,7 +11,7 @@ session_start();
 <body>
     <h1>注文内容の確認</h1>
     <?php
-    $pdo = new PDO('mysql:host=mysql311.phy.lolipop.lan;dbname=LAA1553900-chaoz;charset=utf8', 'LAA1553900', 'Pass1105');
+    $pdo = new PDO('mysql:host=mysql313.phy.lolipop.lan;dbname=LAA1557214-loslogosshop;charset=utf8', 'LAA1557214', 'Pass0331');
 
     $customer_id = $_SESSION['customer']['id'] ?? null; // ログイン済み顧客のID
     $guest = isset($_SESSION['guest_id']) && !$customer_id; // ゲストかどうかを判定
