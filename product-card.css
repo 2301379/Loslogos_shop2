@@ -1,0 +1,218 @@
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 1rem;
+    /* カード間のスペース */
+    padding-left: 1rem;
+    /* 左側に余白を追加 */
+}
+
+.l-wrapper {
+    width: calc(25% - 1rem);
+    /* 横4列分割 - gap分を調整 */
+    margin: 0;
+    /* 外側のマージンをリセット */
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    /* 全体をクリック可能にする */
+}
+
+.card {
+    text-decoration: none;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.16);
+    color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* 上部と下部を均等配置 */
+    width: 100%;
+    height: 350px;
+    /* カード全体の高さを固定 */
+    overflow: hidden;
+    /* はみ出しを防止 */
+}
+
+.card__thumbnail {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    /* 表示したい高さを固定 */
+    background-color: #fff;
+    /* 余白部分の背景色を指定（任意） */
+    position: relative;
+    /* 子要素の位置指定を有効化 */
+    display: flex;
+    align-items: center;
+    /* 縦中央揃え */
+    justify-content: center;
+    /* 横中央揃え */
+    overflow: hidden;
+    /* 安全のため、オーバーフローを隠す */
+}
+
+.card__image {
+    max-width: 100%;
+    /* 親要素の幅に収まるように設定 */
+    max-height: 100%;
+    /* 親要素の高さに収まるように設定 */
+    object-fit: contain;
+    /* 縦横比を維持しつつ、全体が収まるように表示 */
+    display: block;
+    /* 画像のレイアウト崩れを防ぐ */
+}
+
+.card__title {
+    padding: 1rem 1rem 0;
+    font-size: 1.25rem;
+    margin: 0;
+    line-height: 1.5;
+    white-space: nowrap;
+    /* テキストを1行に制限 */
+    overflow: hidden;
+    /* はみ出した部分を隠す */
+    text-overflow: ellipsis;
+    /* 長い場合は省略 */
+}
+
+.card__text {
+    padding: 0 1rem;
+    font-size: .75rem;
+    line-height: 1.4;
+    overflow: hidden;
+    /* テキストがはみ出さないように */
+    display: -webkit-box;
+    /* ボックスで制限 */
+    -webkit-line-clamp: 3;
+    /* 最大行数を指定 */
+    -webkit-box-orient: vertical;
+    /* ボックスの方向を縦に設定 */
+    text-overflow: ellipsis;
+    /* 長い場合は省略 */
+}
+
+.card__text.-number {
+    text-align: right;
+    padding: 0.5rem 1rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .l-wrapper {
+        width: calc(50% - 1rem);
+        /* 横2列 */
+    }
+}
+
+@media (max-width: 480px) {
+    .l-wrapper {
+        width: 100%;
+        /* 横1列 */
+    }
+}
+::content {
+    background-color: #ddd;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    overflow: auto;
+    max-height: 1000px;
+
+}
+
+/* 商品コンテナ */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    max-width: 1200px;
+    width: 100%;
+    height: 150vh;
+    grid-gap: 100px;
+    margin-top: 50px;
+    /* カード間にスペースを追加 */
+}
+
+
+
+.text {
+    font-size: 25px;
+}
+
+.product-card {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    ;
+    /* 右側に余白を追加 */
+
+}
+
+
+.product-info {
+    max-width: 100%;
+    height: 430px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+.photograph {
+    position: sticky;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* メイン画像コンテナ */
+/* メイン画像コンテナ */
+.main-image-container {
+    margin-top: 80px;
+    max-width: 415px;
+    max-height: 319px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+
+
+.price {
+    font-size: 16px;
+    color: #b12704;
+    font-weight: bold;
+}
+
+
+
+.add-to-cart {
+    background-color: #FFD814;
+    color: #333;
+    font-size: 1em;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-to-cart:hover {
+    background-color: #F7CA00;
+}
+
